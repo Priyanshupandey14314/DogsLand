@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Button } from '../ui/Button';
 
-const images = [
-  "../assets/dbg1.jpg",
-  "../assets/dbg2.jpg",
-  "../assets/dog3.jpg",
-];
+import img1 from '../../assets/dbg1.jpg';
+import img2 from '../../assets/dbg2.jpg';
+import img3 from '../../assets/dog3.jpg';
+
+const images = [img1, img2, img3];
 
 export const Hero = () => {
   const [currentImage, setCurrentImage] = useState(0);

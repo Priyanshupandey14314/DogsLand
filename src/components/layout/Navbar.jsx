@@ -51,7 +51,7 @@ export const Navbar = () => {
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2 text-2xl font-bold text-primary">
             <Dog className="w-8 h-8" />
-            <span>Dogs<span className="text-secondary dark:text-white">Land</span></span>
+            <span className={isScrolled ? "" : "text-white"}>Dogs<span className={isScrolled ? "text-secondary dark:text-white" : "text-white"}>Land</span></span>
           </Link>
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-8">
@@ -59,7 +59,7 @@ export const Navbar = () => {
               <Link
                 key={link.name}
                 to={link.path}
-                className={`text-sm font-medium transition-colors hover:text-primary ${location.pathname === link.path ? 'text-primary' : 'text-foreground'
+                className={`text-sm font-medium transition-colors hover:text-primary ${location.pathname === link.path ? 'text-primary' : (isScrolled ? 'text-foreground' : 'text-white')
                   }`}
               >
                 {link.name}
@@ -68,10 +68,10 @@ export const Navbar = () => {
           </nav>
 
           <div className="hidden md:flex items-center gap-4">
-            <button onClick={toggleTheme} className="p-2 rounded-full hover:bg-muted text-foreground transition-colors">
+            <button onClick={toggleTheme} className={`p-2 rounded-full hover:bg-muted transition-colors ${isScrolled ? 'text-foreground' : 'text-white'}`}>
               {isDark ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
             </button>
-            <div className="flex items-center gap-2 text-sm font-medium mr-4">
+            <div className={`flex items-center gap-2 text-sm font-medium mr-4 ${isScrolled ? '' : 'text-white'}`}>
               <Phone className="w-4 h-4 text-primary" />
               <span>(555) 123-4567</span>
             </div>
@@ -80,10 +80,10 @@ export const Navbar = () => {
 
           {/* Mobile Menu Toggle */}
           <div className="md:hidden flex items-center gap-4">
-            <button onClick={toggleTheme} className="p-2 text-foreground">
+            <button onClick={toggleTheme} className={`p-2 ${isScrolled ? 'text-foreground' : 'text-white'}`}>
               {isDark ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
             </button>
-            <button className="text-foreground" onClick={() => setIsOpen(!isOpen)}>
+            <button className={isScrolled ? 'text-foreground' : 'text-white'} onClick={() => setIsOpen(!isOpen)}>
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
           </div>
