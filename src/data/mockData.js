@@ -211,3 +211,140 @@ export const trainers = [
     image: "https://images.unsplash.com/photo-1558231221-a537f59d9f10?auto=format&fit=crop&q=80&w=800",
   },
 ];
+
+export const puppies = [
+  {
+    id: "p1",
+    breed: "Golden Retriever",
+    age: "8 Weeks",
+    color: "Golden",
+    description: "Purebred Golden Retriever puppy, highly active and intelligent. Perfect family companion.",
+    status: "Available",
+    images: [
+      "https://images.unsplash.com/photo-1591160690555-5debfba289f0?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1507146426996-ef05306b995a?auto=format&fit=crop&q=80&w=800"
+    ]
+  },
+  {
+    id: "p2",
+    breed: "German Shepherd",
+    age: "10 Weeks",
+    color: "Black & Tan",
+    description: "Strong, loyal, and incredibly smart German Shepherd puppy. Excellent guard dog potential.",
+    status: "Only Few Left",
+    images: [
+      "https://images.unsplash.com/photo-1589965716319-4a041b58fa8a?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1589965716319-4a041b58fa8a?auto=format&fit=crop&q=80&w=800"
+    ]
+  },
+  {
+    id: "p3",
+    breed: "Labrador",
+    age: "9 Weeks",
+    color: "Chocolate",
+    description: "Playful and loving Chocolate Lab. Great with kids and other pets.",
+    status: "Available",
+    images: [
+      "https://images.unsplash.com/photo-1575425186775-b8de9a427e67?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1575425186775-b8de9a427e67?auto=format&fit=crop&q=80&w=800"
+    ]
+  },
+  {
+    id: "p4",
+    breed: "Husky",
+    age: "7 Weeks",
+    color: "Grey & White",
+    description: "Striking blue eyes and a playful personality. Needs an active owner.",
+    status: "Only Few Left",
+    images: [
+      "https://images.unsplash.com/photo-1605568427561-40dd23c2acea?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1605568427561-40dd23c2acea?auto=format&fit=crop&q=80&w=800"
+    ]
+  },
+  {
+    id: "p5",
+    breed: "Pug",
+    age: "12 Weeks",
+    color: "Fawn",
+    description: "Adorable and cuddly pug puppy. The perfect lap dog for apartment living.",
+    status: "Available",
+    images: [
+      "https://images.unsplash.com/photo-1517423440428-a5a00ad493e8?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1522276498395-f4f68f7f8454?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1517423440428-a5a00ad493e8?auto=format&fit=crop&q=80&w=800"
+    ]
+  }
+];
+
+export const products = [
+  {
+    id: "prod1",
+    name: "Premium Leather Leash",
+    category: "Accessories",
+    size: "6ft",
+    ageCategory: "Adult Dog",
+    price: 35.99,
+    description: "Durable and stylish genuine leather leash with brass hardware.",
+    image: "https://images.unsplash.com/photo-1583336614138-0b5c1f062d1c?auto=format&fit=crop&q=80&w=800",
+    badge: "Best Seller"
+  },
+  {
+    id: "prod2",
+    name: "Grain-Free Puppy Kibble",
+    category: "Food",
+    size: "15 lbs",
+    ageCategory: "Baby Dog",
+    price: 49.99,
+    description: "High-protein, grain-free kibble specifically formulated for growing puppies.",
+    image: "https://images.unsplash.com/photo-1589924691995-400dc9ecc119?auto=format&fit=crop&q=80&w=800",
+    badge: "Premium"
+  },
+  {
+    id: "prod3",
+    name: "Indestructible Chew Toy",
+    category: "Toys",
+    size: "Large",
+    ageCategory: "Adult Dog",
+    price: 18.50,
+    description: "Tough rubber chew toy designed for aggressive chewers.",
+    image: "https://images.unsplash.com/photo-1576201836106-db1758fd1c97?auto=format&fit=crop&q=80&w=800",
+    badge: ""
+  },
+  {
+    id: "prod4",
+    name: "Joint Health Supplements",
+    category: "Supplements",
+    size: "120 Chews",
+    ageCategory: "Adult Dog",
+    price: 29.99,
+    description: "Glucosamine and Chondroitin soft chews for hip and joint support.",
+    image: "https://images.unsplash.com/photo-1584362917165-526a968579e8?auto=format&fit=crop&q=80&w=800",
+    badge: "New Arrival"
+  },
+  {
+    id: "prod5",
+    name: "Stainless Steel Bowl Set",
+    category: "Accessories",
+    size: "32 oz",
+    ageCategory: "All Ages",
+    price: 22.00,
+    description: "Set of two non-slip stainless steel bowls for food and water.",
+    image: "https://images.unsplash.com/photo-1596492784531-6e6eb5ea9993?auto=format&fit=crop&q=80&w=800",
+    badge: "Best Seller"
+  },
+  {
+    id: "prod6",
+    name: "Puppy Training Treats",
+    category: "Treats",
+    size: "16 oz",
+    ageCategory: "Baby Dog",
+    price: 14.99,
+    description: "Soft, bite-sized training treats made with real chicken.",
+    image: "https://images.unsplash.com/photo-1582798358481-d199fb7347bb?auto=format&fit=crop&q=80&w=800",
+    badge: ""
+  }
+];
