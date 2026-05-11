@@ -48,12 +48,12 @@ export const Navbar = () => {
   ];
 
   return (
-    <header className={`fixed w-full h-15 z-50 transition-all duration-300 ${!isTransparent ? 'bg-background/90 backdrop-blur-md shadow-sm py-3' : 'bg-transparent py-5'}`}>
+    <header className={`fixed w-full h-16 z-50 transition-all duration-300 ${!isTransparent ? 'bg-gradient-to-r from-orange-50/95 to-orange-100/95 dark:from-slate-900/95 dark:to-slate-800/95 backdrop-blur-md shadow-sm py-3' : 'bg-transparent py-5'}`}>
       <div className="container mx-auto px-4 md:px-6">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between h-full">
           <Link to="/" className="flex items-center gap-2 text-2xl font-bold text-primary">
             <Dog className="w-8 h-8" />
-            <span className={!isTransparent ? "" : "text-white"}>Dogs<span className={!isTransparent ? "text-secondary dark:text-white" : "text-white"}>Land</span></span>
+            <span className={!isTransparent ? "" : "text-white"}>Dogs<span className={!isTransparent ? "text-gray-900 dark:text-white" : "text-white"}>Land</span></span>
           </Link>
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-8">
@@ -61,7 +61,7 @@ export const Navbar = () => {
               <Link
                 key={link.name}
                 to={link.path}
-                className={`text-sm font-medium transition-colors hover:text-primary ${location.pathname === link.path ? 'text-primary' : (!isTransparent ? 'text-foreground' : 'text-white')
+                className={`text-sm font-bold transition-colors hover:text-primary ${location.pathname === link.path ? 'text-primary' : (!isTransparent ? 'text-gray-800 dark:text-gray-200' : 'text-white')
                   }`}
               >
                 {link.name}
