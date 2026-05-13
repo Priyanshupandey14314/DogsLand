@@ -29,14 +29,14 @@ export const Contact = () => {
       {/* Hero Section */}
       <section className="bg-secondary dark:bg-black py-20 mb-16 text-white text-center">
         <div className="container mx-auto px-4">
-          <motion.h1 
+          <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             className="text-4xl md:text-5xl font-bold mb-4"
           >
             Let's Talk About Your Dog
           </motion.h1>
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
@@ -49,7 +49,7 @@ export const Contact = () => {
 
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col lg:flex-row gap-12">
-          
+
           {/* Contact Info & Map */}
           <div className="lg:w-1/3">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-6 mb-8">
@@ -67,15 +67,16 @@ export const Contact = () => {
             </div>
 
             <div className="rounded-2xl overflow-hidden h-[300px] shadow-lg border border-border">
-              <iframe 
+              <iframe
                 title="Google Maps Location Placeholder"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.183792036069!2d-73.9877313845939!3d40.75797467932681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" 
-                width="100%" 
-                height="100%" 
-                style={{ border: 0 }} 
-                allowFullScreen="" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d911446.6246527056!2d82.15567594999999!3d26.829187799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa014d1df4bde0e47%3A0xdff2b62cab6acf48!2sDogsland%20training!5e0!3m2!1sen!2sin!4v1778654857655!5m2!1sen!2sin"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen=""
                 loading="lazy"
               ></iframe>
+
             </div>
           </div>
 
@@ -83,12 +84,12 @@ export const Contact = () => {
           <div className="lg:w-2/3">
             <div className="bg-card border border-border rounded-3xl p-8 md:p-12 shadow-xl">
               <SectionHeading title="Send Us a Message" subtitle="Get In Touch" centered={false} />
-              
+
               <form onSubmit={handleSubmit(onSubmit)} className="space-y-6 mt-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label className="block text-sm font-medium mb-2 text-foreground">Your Name</label>
-                    <input 
+                    <input
                       {...register("name", { required: "Name is required" })}
                       className="w-full px-4 py-3 rounded-xl border border-input bg-background focus:ring-2 focus:ring-primary focus:outline-none transition-shadow"
                       placeholder="John Doe"
@@ -97,9 +98,9 @@ export const Contact = () => {
                   </div>
                   <div>
                     <label className="block text-sm font-medium mb-2 text-foreground">Email Address</label>
-                    <input 
+                    <input
                       type="email"
-                      {...register("email", { 
+                      {...register("email", {
                         required: "Email is required",
                         pattern: { value: /\S+@\S+\.\S+/, message: "Invalid email address" }
                       })}
@@ -113,7 +114,7 @@ export const Contact = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label className="block text-sm font-medium mb-2 text-foreground">Phone Number</label>
-                    <input 
+                    <input
                       {...register("phone")}
                       className="w-full px-4 py-3 rounded-xl border border-input bg-background focus:ring-2 focus:ring-primary focus:outline-none transition-shadow"
                       placeholder="(555) 123-4567"
@@ -121,7 +122,7 @@ export const Contact = () => {
                   </div>
                   <div>
                     <label className="block text-sm font-medium mb-2 text-foreground">Interested Service</label>
-                    <select 
+                    <select
                       {...register("service")}
                       className="w-full px-4 py-3 rounded-xl border border-input bg-background focus:ring-2 focus:ring-primary focus:outline-none transition-shadow"
                     >
@@ -136,7 +137,7 @@ export const Contact = () => {
 
                 <div>
                   <label className="block text-sm font-medium mb-2 text-foreground">Tell us about your dog and goals</label>
-                  <textarea 
+                  <textarea
                     {...register("message", { required: "Please provide some details" })}
                     rows="5"
                     className="w-full px-4 py-3 rounded-xl border border-input bg-background focus:ring-2 focus:ring-primary focus:outline-none transition-shadow resize-none"
@@ -145,9 +146,9 @@ export const Contact = () => {
                   {errors.message && <p className="text-destructive text-sm mt-1">{errors.message.message}</p>}
                 </div>
 
-                <Button 
-                  type="submit" 
-                  variant="primary" 
+                <Button
+                  type="submit"
+                  variant="primary"
                   className="w-full py-4 text-lg mt-4"
                   disabled={isSubmitting}
                 >
@@ -159,6 +160,6 @@ export const Contact = () => {
 
         </div>
       </div>
-    </div>
+    </div >
   );
 };
