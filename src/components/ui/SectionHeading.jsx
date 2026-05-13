@@ -22,7 +22,7 @@ export const SectionHeading = ({ title, subtitle, centered = true }) => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ delay: 0.1, duration: 0.6, ease: "easeOut" }}
-        className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-foreground leading-[1.15] md:leading-[1.15] lg:leading-[1.15] tracking-tight"
+        className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-foreground leading-[1.15] md:leading-[1.15] lg:leading-[1.15] tracking-tight"
       >
         {title}
       </motion.h2>
